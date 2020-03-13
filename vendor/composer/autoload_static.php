@@ -18,6 +18,7 @@ class ComposerStaticInit612ab34da0bf7aef1caeb94b269f1406
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
         'abede361264e2ae69ec1eee813a101af' => __DIR__ . '/..' . '/markbaker/complex/classes/src/functions/abs.php',
         '21a5860fbef5be28db5ddfbc3cca67c4' => __DIR__ . '/..' . '/markbaker/complex/classes/src/functions/acos.php',
         '1546e3f9d127f2a9bb2d1b6c31c26ef1' => __DIR__ . '/..' . '/markbaker/complex/classes/src/functions/acosh.php',
@@ -76,7 +77,6 @@ class ComposerStaticInit612ab34da0bf7aef1caeb94b269f1406
         'aa53dcba601214d17ad405b7c291b7e8' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/operations/multiply.php',
         '75c79eb1b25749b05a47976f32b0d8a2' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/operations/divideby.php',
         '6ab8ad87a734f276a6bcd5a0fe1289be' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/operations/divideinto.php',
-        '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
@@ -171,6 +171,8 @@ class ComposerStaticInit612ab34da0bf7aef1caeb94b269f1406
         ),
         'E' => 
         array (
+            'Encore\\Admin\\Scheduling\\' => 24,
+            'Encore\\Admin\\LogViewer\\' => 23,
             'Encore\\Admin\\Helpers\\' => 21,
             'Encore\\Admin\\' => 13,
             'Egulias\\EmailValidator\\' => 23,
@@ -392,6 +394,14 @@ class ComposerStaticInit612ab34da0bf7aef1caeb94b269f1406
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
+        ),
+        'Encore\\Admin\\Scheduling\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-admin-ext/scheduling/src',
+        ),
+        'Encore\\Admin\\LogViewer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src',
         ),
         'Encore\\Admin\\Helpers\\' => 
         array (
@@ -1144,12 +1154,20 @@ class ComposerStaticInit612ab34da0bf7aef1caeb94b269f1406
         'Encore\\Admin\\Layout\\Column' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Column.php',
         'Encore\\Admin\\Layout\\Content' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Content.php',
         'Encore\\Admin\\Layout\\Row' => __DIR__ . '/..' . '/encore/laravel-admin/src/Layout/Row.php',
+        'Encore\\Admin\\LogViewer\\BootExtension' => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src/BootExtension.php',
+        'Encore\\Admin\\LogViewer\\LogController' => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src/LogController.php',
+        'Encore\\Admin\\LogViewer\\LogViewer' => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src/LogViewer.php',
+        'Encore\\Admin\\LogViewer\\LogViewerServiceProvider' => __DIR__ . '/..' . '/laravel-admin-ext/log-viewer/src/LogViewerServiceProvider.php',
         'Encore\\Admin\\Middleware\\Authenticate' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Authenticate.php',
         'Encore\\Admin\\Middleware\\Bootstrap' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Bootstrap.php',
         'Encore\\Admin\\Middleware\\LogOperation' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/LogOperation.php',
         'Encore\\Admin\\Middleware\\Permission' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Permission.php',
         'Encore\\Admin\\Middleware\\Pjax' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Pjax.php',
         'Encore\\Admin\\Middleware\\Session' => __DIR__ . '/..' . '/encore/laravel-admin/src/Middleware/Session.php',
+        'Encore\\Admin\\Scheduling\\CronSchedule' => __DIR__ . '/..' . '/laravel-admin-ext/scheduling/src/CronSchedule.php',
+        'Encore\\Admin\\Scheduling\\Scheduling' => __DIR__ . '/..' . '/laravel-admin-ext/scheduling/src/Scheduling.php',
+        'Encore\\Admin\\Scheduling\\SchedulingController' => __DIR__ . '/..' . '/laravel-admin-ext/scheduling/src/SchedulingController.php',
+        'Encore\\Admin\\Scheduling\\SchedulingServiceProvider' => __DIR__ . '/..' . '/laravel-admin-ext/scheduling/src/SchedulingServiceProvider.php',
         'Encore\\Admin\\Show' => __DIR__ . '/..' . '/encore/laravel-admin/src/Show.php',
         'Encore\\Admin\\Show\\AbstractField' => __DIR__ . '/..' . '/encore/laravel-admin/src/Show/AbstractField.php',
         'Encore\\Admin\\Show\\Divider' => __DIR__ . '/..' . '/encore/laravel-admin/src/Show/Divider.php',
